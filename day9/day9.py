@@ -12,9 +12,7 @@ for s in INPUT:
 ans1, ans2 = 10000, 0
 for p in permutations(g.nodes()):
     d = 0
-    for i, n in enumerate(p):
-        if i == 0:
-            continue
+    for i, n in enumerate(p[1:]):
         d += g[n][p[i-1]]["dist"]
     ans1 = min(ans1, d)
     ans2 = max(ans2, d)
