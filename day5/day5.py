@@ -7,6 +7,6 @@ ans = 0
 for s in INPUT:
     rule1 = len(re.findall(r"(..).*\1", s))
     rule2 = len(re.findall(r"(.).\1", s))
-    if rule1 > 0 and rule2 > 0 == 0:
+    if rule1 > 0 and rule2 > 0:
         ans += 1
 print(ans)
