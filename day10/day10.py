@@ -3,7 +3,7 @@ INPUT = "1321131112"
 def play(s):
     output = ""
     curr, count = s[0], 1
-    for i, c in enumerate(s[1:]):
+    for c in s[1:]:
         if c == curr:
             count += 1
         else:
