@@ -1,5 +1,4 @@
 import re
-from collections import defaultdict
 
 with open("./input.txt") as f:
     INPUT = f.read().split('\n')
