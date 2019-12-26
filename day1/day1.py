@@ -12,3 +12,4 @@ for idx, i in enumerate(s):
         c = c - 1
     if c == -1:
         print(idx + 1)
+        break
